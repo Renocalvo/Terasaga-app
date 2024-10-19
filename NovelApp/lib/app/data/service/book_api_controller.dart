@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 class HttpController extends GetxController {
   static const String _baseUrl =
       'https://www.googleapis.com/books/v1/volumes?q=SEARCH_TERM&key=';
-  static const String _apiKey = 'AIzaSyC108-Z4Zkd1siJlVka7uWn2KwqXUWj4hI';
+  static const String _apiKey = '';
 
   RxList<VolumeInfo> products = RxList<VolumeInfo>([]);
   RxBool isLoading = false.obs;
