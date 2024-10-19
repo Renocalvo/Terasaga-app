@@ -39,7 +39,7 @@ class LandingPageController extends GetxController {
   Future<void> fetchBooksFromApi() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://www.googleapis.com/books/v1/volumes?q=SEARCH_TERM&key=AIzaSyC108-Z4Zkd1siJlVka7uWn2KwqXUWj4hI'));
+          'https://www.googleapis.com/books/v1/volumes?q=SEARCH_TERM&key='));
 
       if (response.statusCode == 200) {
         final jsonData = json.decode(response.body);
